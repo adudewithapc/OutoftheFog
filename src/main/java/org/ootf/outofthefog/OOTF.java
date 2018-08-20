@@ -2,6 +2,7 @@ package org.ootf.outofthefog;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -28,7 +29,6 @@ public class OOTF
     {
         proxy.preInit();
 
-        GameRegistry.addSmelting(ModItems.INVERTEBRATE_FLESH_RAW, new ItemStack(ModItems.INVERTEBRATE_FLESH_COOKED), );
     }
 
     @SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
