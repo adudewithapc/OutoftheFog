@@ -1,0 +1,41 @@
+{
+    "vastatosaurus_bite": {
+        "sounds": [
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_bite01",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_bite02",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_bite03",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_bite04"
+        ]
+    },
+    "vastatosaurus_death": {
+        "sounds": [
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_death"
+        ]
+    },
+    "vastatosaurus_hurt": {
+        "sounds": [
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_hurt01",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_hurt02",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_hurt03",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_hurt04"
+        ]
+    },
+    "vastatosaurus_living": {
+        "sounds": [
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living01",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living02",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living03",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living04",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living05",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_living06"
+        ]
+    },
+    "vastatosaurus_roar": {
+        "sounds": [
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_roar01",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_roar02",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_roar03",
+            "outofthefog:vastatosaurus_rex/vastatosaurus_rex_roar04"
+        ]
+    }
+}

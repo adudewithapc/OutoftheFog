@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "fff",
+        "fmf",
+        "fff"
+    ],
+    "key": {
+        "f": {
+            "item": "outofthefog:map_fragment"
+        },
+        "m": {
+            "item": "minecraft:map"
+        }
+    },
+    "result": {
+        "item": "outofthefog:mysterious_map"
+    }
+}

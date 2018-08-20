@@ -1,0 +1,18 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tinted_cross"
+    },
+    "variants": {
+        "age": {
+            "0": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage0"}},
+            "1": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage1"}},
+            "2": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage2"}},
+            "3": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage3"}},
+            "4": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage4"}},
+            "5": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage5"}},
+            "6": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage6"}},
+            "7": { "textures": { "cross": "outofthefog:blocks/cabbage_palm_stage7"}}
+        }
+    }
+}
