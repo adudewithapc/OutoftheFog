@@ -2,7 +2,6 @@ package org.ootf.outofthefog.entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -15,7 +14,7 @@ import javax.annotation.Nullable;
 
 public class EntityVastatosaurusRex extends EntityHostileGrowable
 {
-    private static final DataParameter<Boolean> JUVENILE = EntityDataManager.createKey(EntityVastatosaurusRex.class, DataSerializers.BOOLEAN);
+    private static final DataParameter<Boolean> ADOLESCENT = EntityDataManager.createKey(EntityVastatosaurusRex.class, DataSerializers.BOOLEAN);
 
     public EntityVastatosaurusRex(World worldIn)
     {
@@ -34,17 +33,7 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     protected void entityInit()
     {
         super.entityInit();
-        dataManager.register(JUVENILE, false);
-    }
-
-    public void setJuvenile(boolean juvenile)
-    {
-        dataManager.set(JUVENILE, juvenile);
-    }
-
-    public boolean isJuvenile()
-    {
-        return dataManager.get(JUVENILE);
+        dataManager.register(ADOLESCENT, false);
     }
 
     @Override
@@ -82,18 +71,53 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     }
 
     @Override
-    public void writeEntityToNBT(NBTTagCompound compound)
+    protected int getNewbornAge()
     {
-        super.writeEntityToNBT(compound);
-
-        compound.setBoolean("juvenile", isJuvenile());
+        return -48000;
     }
 
     @Override
-    public void readEntityFromNBT(NBTTagCompound compound)
+    public void setGrowingAge(int age)
     {
-        super.readEntityFromNBT(compound);
+        if(age < -24000)
+        {
+            dataManager.set(BABY, true);
+            dataManager.set(ADOLESCENT, false);
+        }
+        else if(age < 0)
+        {
+            dataManager.set(BABY, true);
+            dataManager.set(ADOLESCENT, true);
+        }
+        else
+        {
+            dataManager.set(BABY, false);
+            dataManager.set(ADOLESCENT, false);
+        }
+    }
 
-        setJuvenile(compound.getBoolean("juvenile"));
+    @Override
+    public int getGrowingAge()
+    {
+        if(world.isRemote)
+        {
+            if (dataManager.get(BABY))
+                return getNewbornAge();
+            else if (dataManager.get(ADOLESCENT))
+                return -1;
+            return 1;
+        }
+        return growingAge;
+    }
+
+    public boolean isAdolescent()
+    {
+        return getGrowingAge() >= -24000 && getGrowingAge() < 0;
+    }
+
+    @Override
+    public boolean isChild()
+    {
+        return getGrowingAge() < -24000;
     }
 }

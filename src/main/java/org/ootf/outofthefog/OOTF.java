@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.ootf.outofthefog.init.ModItems;
@@ -28,7 +29,12 @@ public class OOTF
     public static void preInit(FMLPreInitializationEvent event)
     {
         proxy.preInit();
+    }
 
+    @Mod.EventHandler
+    public static void init(FMLInitializationEvent event)
+    {
+        GameRegistry.addSmelting(ModItems.INVERTEBRATE_FLESH_RAW, new ItemStack(ModItems.INVERTEBRATE_FLESH_COOKED), 0.35f);
     }
 
     @SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)

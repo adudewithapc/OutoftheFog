@@ -272,7 +272,7 @@ public class ModelVastasaurusRex extends ModelBase {
         //Neck2.rotateAngleY = ModelHelper.getDefaultHeadYaw(netHeadYaw);
 
         EntityVastatosaurusRex vastatosaurusRex = (EntityVastatosaurusRex) entity;
-        if(vastatosaurusRex.isJuvenile())
+        if(vastatosaurusRex.isAdolescent())
         {
             GlStateManager.scale(1.3, 1.3, 1.3);
         }

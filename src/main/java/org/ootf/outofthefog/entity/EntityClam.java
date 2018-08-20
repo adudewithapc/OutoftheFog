@@ -6,9 +6,11 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import org.ootf.outofthefog.init.ModItems;
+import org.ootf.outofthefog.init.ModLootTables;
 
 import javax.annotation.Nullable;
 
@@ -44,5 +46,19 @@ public class EntityClam extends EntityLiving
     protected SoundEvent getHurtSound(DamageSource damageSourceIn)
     {
         return null;
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getDeathSound()
+    {
+        return null;
+    }
+
+    @Nullable
+    @Override
+    protected ResourceLocation getLootTable()
+    {
+        return ModLootTables.ENTITY_CLAM;
     }
 }

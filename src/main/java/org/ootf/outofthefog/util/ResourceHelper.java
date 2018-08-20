@@ -15,4 +15,9 @@ public class ResourceHelper
             return createResource("textures/entities/" + textureName);
         return createResource("textures/entities/" + textureName + ".png");
     }
+
+    public static ResourceLocation entityLoot(String location)
+    {
+        return createResource("entity/" + location);
+    }
 }

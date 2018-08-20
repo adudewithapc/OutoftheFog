@@ -18,12 +18,10 @@ import javax.annotation.Nullable;
 
 public abstract class EntityHostileGrowable extends EntityOOTFHostile
 {
-    private static final DataParameter<Boolean> BABY = EntityDataManager.createKey(EntityHostileGrowable.class, DataSerializers.BOOLEAN);
+    protected static final DataParameter<Boolean> BABY = EntityDataManager.createKey(EntityHostileGrowable.class, DataSerializers.BOOLEAN);
     protected int growingAge;
     protected int forcedAge;
     protected int forcedAgeTimer;
-    private float ageWidth = -1;
-    private float ageHeight;
 
     public EntityHostileGrowable(World worldIn)
     {
@@ -84,7 +82,7 @@ public abstract class EntityHostileGrowable extends EntityOOTFHostile
 
                     if(entityGrowable != null)
                     {
-                        entityGrowable.setGrowingAge(-24000);
+                        entityGrowable.setGrowingAge(getNewbornAge());
                         entityGrowable.setLocationAndAngles(posX, posY, posZ, 0, 0);
                         world.spawnEntity(entityGrowable);
 
@@ -161,6 +159,11 @@ public abstract class EntityHostileGrowable extends EntityOOTFHostile
     public void addGrowth(int growth)
     {
         ageUp(growth, false);
+    }
+
+    protected int getNewbornAge()
+    {
+        return -24000;
     }
 
     public boolean canGrow()
