@@ -12,7 +12,7 @@ import org.ootf.outofthefog.util.ModelHelper;
  * vastatosaurus_rex - Hjalma
  * Created using Tabula 7.0.0
  */
-public class ModelVastasaurusRex extends ModelBase {
+public class ModelVastatosaurusRex extends ModelBase {
     public ModelRenderer Hipregion;
     public ModelRenderer Leftthigh;
     public ModelRenderer Rightthigh;
@@ -56,7 +56,7 @@ public class ModelVastasaurusRex extends ModelBase {
     public ModelRenderer Rightankle;
     public ModelRenderer Rightfoot;
 
-    public ModelVastasaurusRex() {
+    public ModelVastatosaurusRex() {
         this.textureWidth = 160;
         this.textureHeight = 160;
         this.Nosebridge = new ModelRenderer(this, 100, 133);
@@ -266,10 +266,8 @@ public class ModelVastasaurusRex extends ModelBase {
 
     @Override
     public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
-        Leftthigh.rotateAngleX = ModelHelper.getDefaultXLeftLimbRotation(limbSwing, limbSwingAmount);
-        Rightthigh.rotateAngleX = ModelHelper.getDefaultXRightLimbRotation(limbSwing, limbSwingAmount);
-        //Neck2.rotateAngleX = ModelHelper.getDefaultHeadPitch(headPitch);
-        //Neck2.rotateAngleY = ModelHelper.getDefaultHeadYaw(netHeadYaw);
+        Leftthigh.rotateAngleX = ModelHelper.getDefaultXLeftLimbRotation(limbSwing, limbSwingAmount) - 0.29722956f;
+        Rightthigh.rotateAngleX = ModelHelper.getDefaultXRightLimbRotation(limbSwing, limbSwingAmount) - 0.29722956f;
 
         EntityVastatosaurusRex vastatosaurusRex = (EntityVastatosaurusRex) entity;
         if(vastatosaurusRex.isAdolescent())

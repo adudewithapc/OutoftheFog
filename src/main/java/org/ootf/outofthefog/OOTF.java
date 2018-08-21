@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import org.ootf.outofthefog.init.ModDimensions;
 import org.ootf.outofthefog.init.ModItems;
 import org.ootf.outofthefog.proxy.IProxy;
 
@@ -34,6 +35,8 @@ public class OOTF
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event)
     {
+        ModDimensions.registerDimensions();
+
         GameRegistry.addSmelting(ModItems.INVERTEBRATE_FLESH_RAW, new ItemStack(ModItems.INVERTEBRATE_FLESH_COOKED), 0.35f);
     }
 

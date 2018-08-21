@@ -1,6 +1,9 @@
 # Creative Tabs
 itemGroup.tabOOTF=Out of the Fog
 
+# Config
+outofthefog.config.title=Out of the Fog
+
 # Blocks
 tile.outofthefog:cabbage_palm.name=Cabbage Palm
 tile.outofthefog:thatch_block.name=Thatch Block
