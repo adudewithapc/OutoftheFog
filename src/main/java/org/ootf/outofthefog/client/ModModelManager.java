@@ -39,6 +39,10 @@ public class ModModelManager
         registerItemModel(ModItems.INVERTEBRATE_FLESH_COOKED);
         registerItemModel(ModItems.CLAM);
         registerItemModel(ModItems.V_REX_HIDE);
+        registerItemModel(ModItems.V_REX_HELMET);
+        registerItemModel(ModItems.V_REX_CHESTPLATE);
+        registerItemModel(ModItems.V_REX_LEGGINGS);
+        registerItemModel(ModItems.V_REX_BOOTS);
     }
 
     private static void registerBlockModel(Block block)

@@ -1,7 +1,10 @@
 package org.ootf.outofthefog;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -25,6 +28,8 @@ public class OOTF
             return new ItemStack(ModItems.MYSTERIOUS_MAP);
         }
     };
+
+    public static ItemArmor.ArmorMaterial v_rexArmorMaterial = EnumHelper.addArmorMaterial("v_rex_hide", MOD_ID + ":v_rex_hide", 15, new int[] {2, 5, 6, 2}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0);
 
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event)

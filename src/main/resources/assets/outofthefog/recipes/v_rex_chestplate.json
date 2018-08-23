@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "H H",
+        "HHH",
+        "HHH"
+    ],
+    "key": {
+        "H": {
+            "item": "outofthefog:v_rex_hide"
+        }
+    },
+    "result": {
+        "item": "outofthefog:v_rex_chestplate"
+    }
+}

@@ -3,7 +3,9 @@ package org.ootf.outofthefog.init;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.util.ResourceLocation;
@@ -32,6 +34,12 @@ public class ModItems
     public static final Item CLAM = Items.AIR;
     public static final Item V_REX_HIDE = Items.AIR;
 
+    //Armor
+    public static final Item V_REX_HELMET = Items.AIR;
+    public static final Item V_REX_CHESTPLATE = Items.AIR;
+    public static final Item V_REX_LEGGINGS = Items.AIR;
+    public static final Item V_REX_BOOTS = Items.AIR;
+
     @SubscribeEvent
     @SuppressWarnings("unused")
     public static void registerItems(RegistryEvent.Register<Item> event)
@@ -45,7 +53,11 @@ public class ModItems
                 prepare(new ItemChancedFood(1, true, 50).addPotionEffect(MobEffects.HUNGER, 20).addPotionEffect(MobEffects.NAUSEA, 5), "invertebrate_flesh_raw"),
                 prepare(new ItemFood(3, true), "invertebrate_flesh_cooked"),
                 prepare(new ItemClam(), "clam"),
-                prepare(new Item(), "v_rex_hide")
+                prepare(new Item(), "v_rex_hide"),
+                prepare(new ItemArmor(OOTF.v_rexArmorMaterial, 0, EntityEquipmentSlot.HEAD), "v_rex_helmet"),
+                prepare(new ItemArmor(OOTF.v_rexArmorMaterial, 0, EntityEquipmentSlot.CHEST), "v_rex_chestplate"),
+                prepare(new ItemArmor(OOTF.v_rexArmorMaterial, 0, EntityEquipmentSlot.LEGS), "v_rex_leggings"),
+                prepare(new ItemArmor(OOTF.v_rexArmorMaterial, 0, EntityEquipmentSlot.FEET), "v_rex_boots")
         );
     }
 
