@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.ootf.outofthefog.init.ModDimensions;
 import org.ootf.outofthefog.init.ModItems;
+import org.ootf.outofthefog.init.ModVillagerProfessions;
 import org.ootf.outofthefog.proxy.IProxy;
 
 import static org.ootf.outofthefog.util.Reference.*;
@@ -35,6 +36,7 @@ public class OOTF
     public static void init(FMLInitializationEvent event)
     {
         ModDimensions.registerDimensions();
+        ModVillagerProfessions.registerProfessions();
 
         GameRegistry.addSmelting(ModItems.INVERTEBRATE_FLESH_RAW, new ItemStack(ModItems.INVERTEBRATE_FLESH_COOKED), 0.35f);
     }

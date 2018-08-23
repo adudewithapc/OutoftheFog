@@ -21,3 +21,6 @@ item.outofthefog:clam.name=Clam
 # Entities
 entity.vastatosaurus_rex.name=Vastatosaurus Rex
 entity.clam.name=Clam
+
+# Villager trades
+entity.Villager.trapper=Trapper
