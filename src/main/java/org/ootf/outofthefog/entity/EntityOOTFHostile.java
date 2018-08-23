@@ -24,7 +24,7 @@ public class EntityOOTFHostile extends EntityMob
         tasks.addTask(4, wander = new EntityAIWanderAvoidWater(this, 1));
         tasks.addTask(5, watchClosest = new EntityAIWatchClosest(this, EntityPlayer.class, 16));
         tasks.addTask(6, lookIdle = new EntityAILookIdle(this));
-        targetTasks.addTask(0, new EntityAIHurtByTarget(this, false));
+        targetTasks.addTask(0, new EntityAIHurtByTarget(this, true));
         targetTasks.addTask(1, new EntityAINearestAttackableTarget<>(this, EntityPlayer.class, true));
     }
 }

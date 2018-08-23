@@ -42,7 +42,7 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
         super.applyEntityAttributes();
         getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
         getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(25);
-        getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(15);
+        getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(150);
         getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(15);
     }
 

@@ -4,7 +4,7 @@ public class Reference
 {
     public static final String MOD_ID = "outofthefog";
     public static final String MOD_NAME = "Out of the Fog";
-    public static final String MOD_VERSION = "0.1.2";
+    public static final String MOD_VERSION = "0.1.3";
 
     private static final String PROXY_LOCATION = "org.ootf.outofthefog.proxy.";
     public static final String CLIENT_PROXY = PROXY_LOCATION + "ClientProxy";
