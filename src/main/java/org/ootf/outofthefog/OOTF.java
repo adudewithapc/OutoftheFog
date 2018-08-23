@@ -2,7 +2,6 @@ package org.ootf.outofthefog;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,7 +19,7 @@ public class OOTF
     public static final CreativeTabs TAB_OOTF = new CreativeTabs("tabOOTF")
     {
         @Override
-        public ItemStack getTabIconItem()
+        public ItemStack createIcon()
         {
             return new ItemStack(ModItems.MYSTERIOUS_MAP);
         }

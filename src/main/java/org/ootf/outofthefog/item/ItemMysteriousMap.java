@@ -19,7 +19,7 @@ public class ItemMysteriousMap extends Item
         if (!worldIn.isRemote)
         {
             EntityPlayerMP playerMP = (EntityPlayerMP) playerIn;
-            playerMP.mcServer.getPlayerList().transferPlayerToDimension(playerMP, playerIn.dimension == OOTFConfig.skullIslandID ? 0 : OOTFConfig.skullIslandID, new TeleporterSkullIsland());
+            playerMP.server.getPlayerList().transferPlayerToDimension(playerMP, playerIn.dimension == OOTFConfig.skullIslandID ? 0 : OOTFConfig.skullIslandID, new TeleporterSkullIsland());
         }
 
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));

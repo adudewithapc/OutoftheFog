@@ -1,0 +1,11 @@
+# IDEA
+.idea/
+*.iml
+build/
+classes/
+
+# Gradle
+.gradle/
+
+# Minecraft
+run/

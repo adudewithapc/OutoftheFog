@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.ootf.outofthefog.util.Reference;
 
-@EventBusSubscriber
+@EventBusSubscriber(modid = Reference.MOD_ID)
 @Config(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
 @Config.LangKey("outofthefog.config.title")
 public class OOTFConfig
