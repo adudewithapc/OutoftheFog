@@ -277,7 +277,7 @@ public class ModelVastatosaurusRex extends ModelBase {
         else if(!vastatosaurusRex.isChild())
         {
             GlStateManager.scale(2.5, 2.5, 2.5);
-            GlStateManager.translate(0, -1, 0);
+            GlStateManager.translate(0, -.95, 0);
         }
 
         this.Leftthigh.render(scale);

@@ -2,12 +2,17 @@ package org.ootf.outofthefog.entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
+import org.ootf.outofthefog.init.ModLootTables;
 import org.ootf.outofthefog.init.ModSounds;
 
 import javax.annotation.Nullable;
@@ -19,7 +24,7 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     public EntityVastatosaurusRex(World worldIn)
     {
         super(worldIn);
-        this.setSize(2.5f, 3);
+        this.setSize(5, 6);
     }
 
     @Nullable
@@ -27,6 +32,14 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     public EntityHostileGrowable createChild(EntityHostileGrowable entityHostileGrowable)
     {
         return new EntityVastatosaurusRex(world);
+    }
+
+    @Override
+    protected void initEntityAI()
+    {
+        super.initEntityAI();
+        targetTasks.removeTask(nearestAttackableTarget);
+        targetTasks.addTask(1, nearestAttackableTarget = new EntityAINearestAttackableTarget<>(this, EntityPlayer.class, false, false));
     }
 
     @Override
@@ -40,7 +53,7 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
+        getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4);
         getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(25);
         getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(150);
         getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(15);
@@ -121,5 +134,12 @@ public class EntityVastatosaurusRex extends EntityHostileGrowable
     public boolean isChild()
     {
         return getGrowingAge() < -24000;
+    }
+
+    @Nullable
+    @Override
+    protected ResourceLocation getLootTable()
+    {
+        return ModLootTables.ENTITY_V_REX;
     }
 }
