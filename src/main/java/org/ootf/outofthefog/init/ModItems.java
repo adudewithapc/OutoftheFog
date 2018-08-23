@@ -15,7 +15,6 @@ import org.ootf.outofthefog.OOTF;
 import org.ootf.outofthefog.item.ItemChancedFood;
 import org.ootf.outofthefog.item.ItemClam;
 import org.ootf.outofthefog.item.ItemMysteriousMap;
-import org.ootf.outofthefog.item.ItemTeleporterTest;
 import org.ootf.outofthefog.util.Reference;
 
 import javax.annotation.Nullable;
@@ -62,7 +61,6 @@ public class ModItems
         registerItem(new ItemChancedFood(1, true, 50).addPotionEffect(MobEffects.HUNGER, 20).addPotionEffect(MobEffects.NAUSEA, 5), "invertebrate_flesh_raw", forgeRegistry);
         registerItem(new ItemFood(3, true), "invertebrate_flesh_cooked", forgeRegistry);
         registerItem(new ItemClam(), "clam", forgeRegistry);
-        registerItem(new ItemTeleporterTest(), "teleporter_test", forgeRegistry);
     }
 
     private static void registerItem(Item item, String name, IForgeRegistry<Item> forgeRegistry)
