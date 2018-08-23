@@ -17,6 +17,7 @@ item.outofthefog:plant_fiber.name=Plant Fiber
 item.outofthefog:invertebrate_flesh_raw.name=Raw Invertebrate Flesh
 item.outofthefog:invertebrate_flesh_cooked.name=Cooked Invertebrate Flesh
 item.outofthefog:clam.name=Clam
+item.outofthefog:v_rex_hide.name=Vastatosaurus Rex Hide
 
 # Entities
 entity.vastatosaurus_rex.name=Vastatosaurus Rex

@@ -38,6 +38,7 @@ public class ModModelManager
         registerItemModel(ModItems.INVERTEBRATE_FLESH_RAW);
         registerItemModel(ModItems.INVERTEBRATE_FLESH_COOKED);
         registerItemModel(ModItems.CLAM);
+        registerItemModel(ModItems.V_REX_HIDE);
     }
 
     private static void registerBlockModel(Block block)

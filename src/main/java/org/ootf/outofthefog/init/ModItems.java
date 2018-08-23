@@ -30,6 +30,7 @@ public class ModItems
     public static final Item INVERTEBRATE_FLESH_RAW = Items.AIR;
     public static final Item INVERTEBRATE_FLESH_COOKED = Items.AIR;
     public static final Item CLAM = Items.AIR;
+    public static final Item V_REX_HIDE = Items.AIR;
 
     @SubscribeEvent
     @SuppressWarnings("unused")
@@ -43,7 +44,8 @@ public class ModItems
                 prepare(new Item(), "plant_fiber"),
                 prepare(new ItemChancedFood(1, true, 50).addPotionEffect(MobEffects.HUNGER, 20).addPotionEffect(MobEffects.NAUSEA, 5), "invertebrate_flesh_raw"),
                 prepare(new ItemFood(3, true), "invertebrate_flesh_cooked"),
-                prepare(new ItemClam(), "clam")
+                prepare(new ItemClam(), "clam"),
+                prepare(new Item(), "v_rex_hide")
         );
     }
 
