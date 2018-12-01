@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "top=true": {
+            "model": "outofthefog:reeds_top"
+        },
+        "top=false": {
+            "model": "outofthefog:reeds_bottom"
+        }
+    }
+}

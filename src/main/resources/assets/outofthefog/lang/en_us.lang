@@ -7,6 +7,7 @@ outofthefog.config.title=Out of the Fog
 # Blocks
 tile.outofthefog:cabbage_palm.name=Cabbage Palm
 tile.outofthefog:thatch_block.name=Thatch Block
+tile.outofthefog:reeds.name=Reeds
 
 # Items
 item.outofthefog:map_fragment.name=Map Fragment
@@ -17,11 +18,23 @@ item.outofthefog:plant_fiber.name=Plant Fiber
 item.outofthefog:invertebrate_flesh_raw.name=Raw Invertebrate Flesh
 item.outofthefog:invertebrate_flesh_cooked.name=Cooked Invertebrate Flesh
 item.outofthefog:clam.name=Clam
+item.outofthefog:clam_pearl.name=Pearl Clam
 item.outofthefog:v_rex_hide.name=Vastatosaurus Rex Hide
+item.outofthefog:v_rex_helmet.name=Vastatosaurus Hide Helmet
+item.outofthefog:v_rex_chestplate.name=Vastatosaurus Hide Chesplate
+item.outofthefog:v_rex_leggings.name=Vastatosaurus Hide Leggings
+item.outofthefog:v_rex_boots.name=Vastatosaurus Hide Boots
+item.outofthefog:clam_shell.name=Clam Shell
+item.outofthefog:clam_shell_pearl.name=Pearl Clam Shell
+item.outofthefog:pearl.name=Pearl
+item.outofthefog:reeds.name=Reeds
 
 # Entities
 entity.vastatosaurus_rex.name=Vastatosaurus Rex
 entity.clam.name=Clam
+entity.ramakong_farmer.name=Ramakong Farmer
+entity.ramakong_chief.name=Ramakong Chief
+entity.scorpio-pede.name=Scorpio-pede
 
 # Villager trades
 entity.Villager.trapper=Trapper

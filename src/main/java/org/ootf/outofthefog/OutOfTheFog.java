@@ -18,7 +18,7 @@ import org.ootf.outofthefog.proxy.IProxy;
 import static org.ootf.outofthefog.util.Reference.*;
 
 @Mod(modid = MOD_ID, name = MOD_NAME, version = MOD_VERSION)
-public class OOTF
+public class OutOfTheFog
 {
     public static final CreativeTabs TAB_OOTF = new CreativeTabs("tabOOTF")
     {

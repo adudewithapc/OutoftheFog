@@ -1,6 +1,5 @@
 package org.ootf.outofthefog.block;
 
-import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

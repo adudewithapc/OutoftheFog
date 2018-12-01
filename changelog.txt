@@ -1,0 +1,2 @@
+**Fixes:**
+- Reeds now get removed if destroyed by water or pistons

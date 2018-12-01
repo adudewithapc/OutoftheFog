@@ -15,11 +15,11 @@ import java.util.Random;
 
 public class BlockOOTFCrop extends BlockCrops
 {
-    private final boolean dropsfiber;
+    private final boolean dropsFiber;
 
     protected BlockOOTFCrop(boolean dropsFiber)
     {
-        this.dropsfiber = dropsFiber;
+        this.dropsFiber = dropsFiber;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class BlockOOTFCrop extends BlockCrops
                 if (rand.nextInt(2 * getMaxAge()) <= age)
                 {
                     drops.add(new ItemStack(this.getSeed(), 1, 0));
-                    if(dropsfiber) drops.add(new ItemStack(ModItems.PLANT_FIBER));
+                    if(dropsFiber) drops.add(new ItemStack(ModItems.PLANT_FIBER));
                 }
             }
         }

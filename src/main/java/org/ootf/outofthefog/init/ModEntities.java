@@ -9,7 +9,10 @@ import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.ootf.outofthefog.entity.EntityClam;
+import org.ootf.outofthefog.entity.EntityScorpioPede;
 import org.ootf.outofthefog.entity.EntityVastatosaurusRex;
+import org.ootf.outofthefog.entity.humen.EntityRamakong;
+import org.ootf.outofthefog.entity.humen.EntityRamakongFarmer;
 import org.ootf.outofthefog.util.Reference;
 import org.ootf.outofthefog.util.ResourceHelper;
 
@@ -28,13 +31,25 @@ public class ModEntities
     @ObjectHolder("clam")
     public static final EntityEntry CLAM = null;
 
+    @ObjectHolder("ramakong_farmer")
+    public static final EntityEntry RAMAKONG_FARMER = null;
+
+    @ObjectHolder("ramakong_chief")
+    public static final EntityEntry RAMAKONG_CHIEF = null;
+
+    @ObjectHolder("scorpio-pede")
+    public static final EntityEntry SCORPIO_PEDE = null;
+
     @SubscribeEvent
     public static void registerEntities(RegistryEvent.Register<EntityEntry> event)
     {
         IForgeRegistry<EntityEntry> forgeRegistry = event.getRegistry();
 
-        forgeRegistry.register(getEntryBuilder(EntityVastatosaurusRex.class, "vastatosaurus_rex", 64, 3, false, Color.decode("#003a08"), Color.decode("#002805")).build());
-        forgeRegistry.register(getEntryBuilder(EntityClam.class, "clam", 64, 3, false, null, null).build());
+        forgeRegistry.registerAll(
+                getEntryBuilder(EntityVastatosaurusRex.class, "vastatosaurus_rex", 64, 3, false, Color.decode("#003a08"), Color.decode("#002805")).build(),
+                getEntryBuilder(EntityClam.class, "clam", 64, 3, false, null, null).build(),
+                getEntryBuilder(EntityRamakongFarmer.class, "ramakong_farmer", 64, 3, false, Color.decode("#4f2700"), Color.LIGHT_GRAY).build(),
+                getEntryBuilder(EntityScorpioPede.class, "scorpio-pede", 64, 3, false, Color.decode("#5e2100"), Color.decode("#602c03")).build());
     }
 
     private static <E extends Entity> EntityEntryBuilder<E> getEntryBuilder(Class<E> entityClass, String name, int range, int updateFrequency, boolean sendsVelocityUpdates, @Nullable Color primaryColor, @Nullable Color secondaryColor)

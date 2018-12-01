@@ -280,6 +280,12 @@ public class ModelVastatosaurusRex extends ModelBase {
             GlStateManager.translate(0, -.95, 0);
         }
 
+        if(!vastatosaurusRex.isMale())
+        {
+            GlStateManager.scale(0.9, 0.8, 0.9);
+            GlStateManager.translate(0, 0.4, 0);
+        }
+
         this.Leftthigh.render(scale);
         this.Hipregion.render(scale);
         this.Rightthigh.render(scale);
