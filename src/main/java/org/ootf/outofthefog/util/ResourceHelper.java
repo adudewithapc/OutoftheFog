@@ -11,7 +11,7 @@ public class ResourceHelper
 
     public static ResourceLocation entityTexture(String textureName)
     {
-        if(textureName.substring(textureName.length() - 4).equals(".png"))
+        if(textureName.substring(textureName.length() - 4).equals(".png"))//TODO: replace with endsWith
             return createResource("textures/entities/" + textureName);
         return createResource("textures/entities/" + textureName + ".png");
     }
