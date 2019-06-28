@@ -33,7 +33,7 @@ public class EntityClam extends EntityLiving
     protected void entityInit()
     {
         super.entityInit();
-        dataManager.register(HAS_PEARL, false);
+        dataManager.register(HAS_PEARL, false);//TODO: save to NBT
     }
 
     @Override
