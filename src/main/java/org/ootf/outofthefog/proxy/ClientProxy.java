@@ -1,10 +1,11 @@
 package org.ootf.outofthefog.proxy;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import org.ootf.outofthefog.client.render.RenderClam;
+import org.ootf.outofthefog.client.render.*;/*FIXME*/
 import org.ootf.outofthefog.client.render.RenderScorpioPede;
 import org.ootf.outofthefog.client.render.RenderVastatosaurusRex;
-import org.ootf.outofthefog.client.render.humen.RenderRamakongFarmer;
+import org.ootf.outofthefog.client.render.butterfly.*;/*FIXME*/
+import org.ootf.outofthefog.client.render.humen.*;/*FIXME*/
 import org.ootf.outofthefog.entity.EntityClam;
 import org.ootf.outofthefog.entity.EntityScorpioPede;
 import org.ootf.outofthefog.entity.EntityVastatosaurusRex;
@@ -15,9 +16,9 @@ public class ClientProxy implements IProxy
     @Override
     public void preInit()
     {
-        RenderingRegistry.registerEntityRenderingHandler(EntityVastatosaurusRex.class, RenderVastatosaurusRex::new);
-        RenderingRegistry.registerEntityRenderingHandler(EntityClam.class, RenderClam::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityVastatosaurusRex.class, RenderTigerShark/*FIXME*/::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityClam.class, RenderBloodfish/*FIXME*/::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityRamakongFarmer.class, RenderRamakongFarmer::new);
-        RenderingRegistry.registerEntityRenderingHandler(EntityScorpioPede.class, RenderScorpioPede::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityScorpioPede.class, RenderMosuraAeterna/*FIXME*/::new);
     }
 }
