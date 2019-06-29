@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.ootf.outofthefog.entity.*;
+import org.ootf.outofthefog.entity.butterfly.EntityMosuraAeterna;
 import org.ootf.outofthefog.entity.humen.*;
 import org.ootf.outofthefog.util.Reference;
 import org.ootf.outofthefog.util.ResourceHelper;
@@ -47,7 +48,9 @@ public class ModEntities
                 getEntryBuilder(EntityClam.class, "clam", 64, 3, false, null, null).build(),
                 getEntryBuilder(EntityRamakongFarmer.class, "ramakong_farmer", 64, 3, false, Color.decode("#4f2700"), Color.LIGHT_GRAY).build(),
                 getEntryBuilder(EntityScorpioPede.class, "scorpio-pede", 64, 3, false, Color.decode("#5e2100"), Color.decode("#602c03")).build(),
-                /*FIXME*/getEntryBuilder(EntityBloodfish.class, "bloodfish", 64, 3, false, null, null).build());
+                /*FIXME*/getEntryBuilder(EntityMosuraAeterna.class, "mosura_aeterna", 64, 3, false, Color.LIGHT_GRAY, Color.LIGHT_GRAY).build(),
+                /*FIXME*/getEntryBuilder(EntityTigerShark.class, "tiger_shark", 64, 3, false, Color.LIGHT_GRAY, Color.LIGHT_GRAY).build(),
+                /*FIXME*/getEntryBuilder(EntityBloodfish.class, "bloodfish", 64, 3, false, Color.LIGHT_GRAY, Color.LIGHT_GRAY).build());
     }
 
     private static <E extends Entity> EntityEntryBuilder<E> getEntryBuilder(Class<E> entityClass, String name, int range, int updateFrequency, boolean sendsVelocityUpdates, @Nullable Color primaryColor, @Nullable Color secondaryColor)

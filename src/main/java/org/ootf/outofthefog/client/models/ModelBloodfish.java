@@ -138,14 +138,15 @@ public class ModelBloodfish extends ModelBase {
             setRotateAngle(tail2, -0.12740903872453743F, 0.0F, 0.0F);
             setRotateAngle(tailFin, 0.08482300397719036F, 0.0F, 0.0F);
         } else if (i == 1) {
-            float f = 0.9F;//TODO
-            setRotateAngle(bodyMiddle, 0.08482300164692443F, 0.136659280431156F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(pectoralFinsLeft, 0.12740903539558604F, 0.136659280431156F - 0.182212374F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(pectoralFinsRight, 0.12740903539558604F, 0.045553093477052F - 0.182212374F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(bodyBack, -0.12740903539558604F, 0.136659280431156F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(tail1, -0.04241150082346221F, 0.136659280431156F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(tail2, -0.12740903539558604F, 0.31869712141416456F * MathHelper.cos(ageInTicks * f), 0.0F);
-            setRotateAngle(tailFin, 0.08482300164692443F, 0.091106186954104F * MathHelper.cos(ageInTicks * f), 0.0F);
+            float f = 0.5F;//TODO
+            float f2 = MathHelper.cos(ageInTicks * f);
+            setRotateAngle(bodyMiddle, 0.08482300164692443F, 0.136659280431156F * f2, 0.0F);
+            setRotateAngle(pectoralFinsLeft, 0.12740903539558604F, 0.136659280431156F - 0.182212374F * f2, 0.0F);
+            setRotateAngle(pectoralFinsRight, 0.12740903539558604F, 0.045553093477052F - 0.182212374F * f2, 0.0F);
+            setRotateAngle(bodyBack, -0.12740903539558604F, 0.136659280431156F * f2, 0.0F);
+            setRotateAngle(tail1, -0.04241150082346221F, 0.136659280431156F * f2, 0.0F);
+            setRotateAngle(tail2, -0.12740903539558604F, 0.31869712141416456F * f2, 0.0F);
+            setRotateAngle(tailFin, 0.08482300164692443F, 0.091106186954104F * f2, 0.0F);
         }
     }
 

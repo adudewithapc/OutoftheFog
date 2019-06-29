@@ -160,7 +160,7 @@ public class ModelTigerShark extends ModelBase {
             this.setRotateAngle(Tail3, 0.04555309164612875F, 0.0F, 0.0F);
             this.setRotateAngle(Tailend, -0.04555309164612875F, 0.0F, 0.0F);
         } else {
-            float f = 0.9F;//TODO
+            float f = 0.3F;//TODO
             float f2 = MathHelper.cos(ageInTicks * f);
             this.setRotateAngle(BackBody, -0.08482300164692443F, 0.045553093477052F * f2, 0.0F);
             this.setRotateAngle(Tail1, -0.04241150082346221F, 0.18203784098300857F * f2, 0.0F);

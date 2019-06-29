@@ -1,4 +1,4 @@
-package org.ootf.outofthefog.client.models;
+package org.ootf.outofthefog.client.models.butterfly;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
