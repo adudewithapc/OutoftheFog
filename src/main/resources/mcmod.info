@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["OOTF Team"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/outofthefog/textures/logo.png",
   "screenshots": [],
   "dependencies": []
 }
