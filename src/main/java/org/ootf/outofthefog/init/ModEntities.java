@@ -8,11 +8,8 @@ import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
-import org.ootf.outofthefog.entity.EntityClam;
-import org.ootf.outofthefog.entity.EntityScorpioPede;
-import org.ootf.outofthefog.entity.EntityVastatosaurusRex;
-import org.ootf.outofthefog.entity.humen.EntityRamakong;
-import org.ootf.outofthefog.entity.humen.EntityRamakongFarmer;
+import org.ootf.outofthefog.entity.*;
+import org.ootf.outofthefog.entity.humen.*;
 import org.ootf.outofthefog.util.Reference;
 import org.ootf.outofthefog.util.ResourceHelper;
 
@@ -49,7 +46,8 @@ public class ModEntities
                 getEntryBuilder(EntityVastatosaurusRex.class, "vastatosaurus_rex", 64, 3, false, Color.decode("#003a08"), Color.decode("#002805")).build(),
                 getEntryBuilder(EntityClam.class, "clam", 64, 3, false, null, null).build(),
                 getEntryBuilder(EntityRamakongFarmer.class, "ramakong_farmer", 64, 3, false, Color.decode("#4f2700"), Color.LIGHT_GRAY).build(),
-                getEntryBuilder(EntityScorpioPede.class, "scorpio-pede", 64, 3, false, Color.decode("#5e2100"), Color.decode("#602c03")).build());
+                getEntryBuilder(EntityScorpioPede.class, "scorpio-pede", 64, 3, false, Color.decode("#5e2100"), Color.decode("#602c03")).build(),
+                /*FIXME*/getEntryBuilder(EntityBloodfish.class, "bloodfish", 64, 3, false, null, null).build());
     }
 
     private static <E extends Entity> EntityEntryBuilder<E> getEntryBuilder(Class<E> entityClass, String name, int range, int updateFrequency, boolean sendsVelocityUpdates, @Nullable Color primaryColor, @Nullable Color secondaryColor)
