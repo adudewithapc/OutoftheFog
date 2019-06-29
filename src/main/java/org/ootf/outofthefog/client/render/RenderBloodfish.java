@@ -23,6 +23,6 @@ public class RenderBloodfish extends RenderLiving<EntityBloodfish>
     @Override
     protected ResourceLocation getEntityTexture(EntityBloodfish entity)
     {
-        return entity.hasPearl()/*FIXME*/ ? TEXTURE_FEMALE : TEXTURE_MALE;
+        return entity.isFemale() ? TEXTURE_FEMALE : TEXTURE_MALE;
     }
 }
