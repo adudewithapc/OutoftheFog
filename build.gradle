@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "0.1.7"
+version = "0.2.0"
 group = "org.ootf.outofthefog" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "outofthefog"
 
