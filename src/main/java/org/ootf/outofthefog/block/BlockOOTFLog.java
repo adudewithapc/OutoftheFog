@@ -16,6 +16,8 @@ public class BlockOOTFLog extends BlockRotatedPillar {
 
     public BlockOOTFLog() {
         super(Material.WOOD);
+        this.setHardness(1.0F);
+        this.setHarvestLevel("axe", 0);
     }
 
     public Item createItemBlock() {

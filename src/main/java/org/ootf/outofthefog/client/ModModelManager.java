@@ -31,6 +31,18 @@ public class ModModelManager
     {
         registerBlockModel(ModBlocks.THATCH_BLOCK);
         registerBlockModel(ModBlocks.REEDS);
+        registerBlockModel(ModBlocks.RIBBON_FERN);
+        registerBlockModel(ModBlocks.WETA_FERN);
+        registerBlockModel(ModBlocks.INDIGOFERA);
+        registerBlockModel(ModBlocks.LASIANDRA);
+        registerBlockModel(ModBlocks.STOUT_DRAGON);
+        registerBlockModel(ModBlocks.EPIPHYTE_FERN);
+        registerBlockModel(ModBlocks.HORSETAILS);
+        registerBlockModel(ModBlocks.TROPICAL_FOLIAGE);
+        registerBlockModel(ModBlocks.FANLEAF);
+        registerBlockModel(ModBlocks.UMBRELLA_LEAF);
+
+        registerBlockModel(ModBlocks.JACKSONS_ENTBARK_SAPLING);
 
         registerBlockModel(ModBlocks.JACKSONS_ENTBARK_PLANKS);
         registerBlockModel(ModBlocks.JACKSONS_ENTBARK_LEAVES);
@@ -61,11 +73,37 @@ public class ModModelManager
     {
         registerItemModel(ModItems.MAP_FRAGMENT);
         registerItemModel(ModItems.MYSTERIOUS_MAP);
+
+        registerItemModel(ModItems.EDIBLE_FERN_FIDDLEHEAD);
         registerItemModel(ModItems.CABBAGE_PALM_RHIZOMES);
         registerItemModel(ModItems.CABBAGE_PALM_SEEDS);
         registerItemModel(ModItems.PLANT_FIBER);
+        registerItemModel(ModItems.WILD_BANANA);
+        registerItemModel(ModItems.PREPARED_COCONUT);
+        registerItemModel(ModItems.FIGS);
+        registerItemModel(ModItems.DAIKON);
+        registerItemModel(ModItems.COOKED_RICE);
+        registerItemModel(ModItems.RAW_COCONUT);
+
         registerItemModel(ModItems.INVERTEBRATE_FLESH_RAW);
         registerItemModel(ModItems.INVERTEBRATE_FLESH_COOKED);
+        registerItemModel(ModItems.GAMEY_VENISON_RAW);
+        registerItemModel(ModItems.GAMEY_VENISON_COOKED);
+        registerItemModel(ModItems.VENISON_RAW);
+        registerItemModel(ModItems.VENISON_COOKED);
+        registerItemModel(ModItems.PRIME_FISH_FILLET_RAW);
+        registerItemModel(ModItems.PRIME_FISH_FILLET_COOKED);
+        registerItemModel(ModItems.FISH_FILLET_RAW);
+        registerItemModel(ModItems.FISH_FILLET_COOKED);
+        registerItemModel(ModItems.PRIME_DINOSAUR_MEAT_RAW);
+        registerItemModel(ModItems.PRIME_DINOSAUR_STEAK);
+        registerItemModel(ModItems.DINOSAUR_MEAT_RAW);
+        registerItemModel(ModItems.DINOSAUR_STEAK);
+        registerItemModel(ModItems.REPTILE_MEAT_RAW);
+        registerItemModel(ModItems.REPTILE_MEAT_COOKED);
+        registerItemModel(ModItems.AMPHIBIAN_MEAT_RAW);
+        registerItemModel(ModItems.AMPHIBIAN_MEAT_COOKED);
+
         registerItemModel(ModItems.CLAM);
         registerItemModel(ModItems.CLAM, 1, "pearl");
         registerItemModel(ModItems.V_REX_HIDE);

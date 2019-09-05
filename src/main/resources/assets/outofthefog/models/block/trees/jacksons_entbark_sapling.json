@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "outofthefog:blocks/jacksons_entbark_sapling",
+    "jacksons_entbark_sapling": "outofthefog:blocks/jacksons_entbark_sapling"
+  }
+}

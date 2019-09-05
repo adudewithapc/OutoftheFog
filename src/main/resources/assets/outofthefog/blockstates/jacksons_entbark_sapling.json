@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "stage=0": { "model": "outofthefog:trees/jacksons_entbark_sapling" },
+    "stage=1": { "model": "outofthefog:trees/jacksons_entbark_sapling" },
+    "normal": { "model": "outofthefog:trees/jacksons_entbark_sapling" },
+    "inventory": { "model": "outofthefog:items/jacksons_entbark_sapling" },
+    "force_sapling": { "model": "outofthefog:trees/jacksons_entbark_sapling" }
+  }
+}

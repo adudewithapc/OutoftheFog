@@ -13,6 +13,8 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import org.ootf.outofthefog.init.ModItems;
 
 import javax.annotation.Nonnull;
 import java.util.List;
@@ -39,6 +41,12 @@ public class BlockBananaLeaves extends BlockLeaves {
         return null;
     }
 
+    @Override
+    protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance) {
+        if (worldIn.rand.nextInt(chance) == 40) {
+            spawnAsEntity(worldIn, pos, new ItemStack(ModItems.WILD_BANANA, 1, 0));
+        }
+    }
 
     @Nonnull
     @Override

@@ -1,6 +1,7 @@
 package org.ootf.outofthefog.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -28,6 +29,39 @@ public class ModBlocks
 
     @ObjectHolder("reeds")
     public static final BlockDoublePlant REEDS = null;
+
+    @ObjectHolder("ribbon_fern")
+    public static final BlockBush RIBBON_FERN = null;
+
+    @ObjectHolder("weta_fern")
+    public static final BlockBush WETA_FERN = null;
+
+    @ObjectHolder("indigofera")
+    public static final BlockBush INDIGOFERA = null;
+
+    @ObjectHolder("lasiandra")
+    public static final BlockBush LASIANDRA = null;
+
+    @ObjectHolder("stout_dragon")
+    public static final BlockBush STOUT_DRAGON = null;
+
+    @ObjectHolder("epiphyte_fern")
+    public static final BlockBush EPIPHYTE_FERN = null;
+
+    @ObjectHolder("horsetails")
+    public static final BlockBush HORSETAILS = null;
+
+    @ObjectHolder("tropical_foliage")
+    public static final BlockBush TROPICAL_FOLIAGE = null;
+
+    @ObjectHolder("fanleaf")
+    public static final BlockBush FANLEAF = null;
+
+    @ObjectHolder("umbrella_leaf")
+    public static final BlockBush UMBRELLA_LEAF = null;
+
+    @ObjectHolder("jacksons_entbark_sapling")
+    public static final Block JACKSONS_ENTBARK_SAPLING = Blocks.SAPLING;
 
 
         @ObjectHolder("jacksons_entbark_planks")
@@ -108,6 +142,18 @@ public class ModBlocks
                 prepare(new BlockCabbagePalm(), "cabbage_palm"),
                 prepare(new BlockOOTF(Material.PLANTS).setSoundType(SoundType.PLANT), "thatch_block"),
                 prepare(new BlockReeds(), "reeds"),
+                prepare(new BlockGrassPlant(),"ribbon_fern"),
+                prepare(new BlockGrassPlant(),"weta_fern"),
+                prepare(new BlockGrassPlant(),"indigofera"),
+                prepare(new BlockGrassPlant(),"lasiandra"),
+                prepare(new BlockGrassPlant(),"stout_dragon"),
+                prepare(new BlockGrassPlant(),"epiphyte_fern"),
+                prepare(new BlockGrassPlant(),"tropical_foliage"),
+                prepare(new BlockGrassPlant(),"horsetails"),
+                prepare(new BlockGrassPlant(),"fanleaf"),
+                prepare(new BlockGrassPlant(),"umbrella_leaf"),
+
+                prepare(new BlockEntbarkSapling(),"jacksons_entbark_sapling"),
 
                 prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"fig_tree_planks"),
                 prepare(new BlockFigLeaves(),"fig_tree_leaves"),
@@ -142,6 +188,19 @@ public class ModBlocks
     {
         event.getRegistry().registerAll(
                 createItemBlock(THATCH_BLOCK),
+
+                createItemBlock(RIBBON_FERN),
+                createItemBlock(WETA_FERN),
+                createItemBlock(INDIGOFERA),
+                createItemBlock(LASIANDRA),
+                createItemBlock(STOUT_DRAGON),
+                createItemBlock(EPIPHYTE_FERN),
+                createItemBlock(TROPICAL_FOLIAGE),
+                createItemBlock(HORSETAILS),
+                createItemBlock(FANLEAF),
+                createItemBlock(UMBRELLA_LEAF),
+
+                createItemBlock(JACKSONS_ENTBARK_SAPLING),
 
                 createItemBlock(JACKSONS_ENTBARK_PLANKS),
                 createItemBlock(JACKSONS_ENTBARK_LEAVES),
