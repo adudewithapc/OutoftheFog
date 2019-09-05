@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "outofthefog:blocks/fig_tree_leaves"
+  }
+}

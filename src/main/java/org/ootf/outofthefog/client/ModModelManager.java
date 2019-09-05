@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -30,6 +31,30 @@ public class ModModelManager
     {
         registerBlockModel(ModBlocks.THATCH_BLOCK);
         registerBlockModel(ModBlocks.REEDS);
+
+        registerBlockModel(ModBlocks.JACKSONS_ENTBARK_PLANKS);
+        registerBlockModel(ModBlocks.JACKSONS_ENTBARK_LEAVES);
+        registerBlockModel(ModBlocks.JACKSONS_ENTBARK_LOG);
+        registerBlockModel(ModBlocks.BANANA_TREE_LEAVES);
+        registerBlockModel(ModBlocks.BANANA_TREE_LOG);
+        registerBlockModel(ModBlocks.FIG_TREE_PLANKS);
+        registerBlockModel(ModBlocks.FIG_TREE_LEAVES);
+        registerBlockModel(ModBlocks.FIG_TREE_LOG);
+        registerBlockModel(ModBlocks.TOONA_CILIATA_PLANKS);
+        registerBlockModel(ModBlocks.TOONA_CILIATA_LEAVES);
+        registerBlockModel(ModBlocks.TOONA_CILIATA_LOG);
+        registerBlockModel(ModBlocks.COCONUT_PALM_PLANKS);
+        registerBlockModel(ModBlocks.COCONUT_PALM_LEAVES);
+        registerBlockModel(ModBlocks.COCONUT_PALM_LOG);
+        registerBlockModel(ModBlocks.SWAMPROOT_PLANKS);
+        registerBlockModel(ModBlocks.SWAMPROOT_LEAVES);
+        registerBlockModel(ModBlocks.SWAMPROOT_LOG);
+        registerBlockModel(ModBlocks.UMBRELLA_PALM_PLANKS);
+        registerBlockModel(ModBlocks.UMBRELLA_PALM_LEAVES);
+        registerBlockModel(ModBlocks.UMBRELLA_PALM_LOG);
+        registerBlockModel(ModBlocks.SNAGGLEBRANCH_PLANKS);
+        registerBlockModel(ModBlocks.SNAGGLEBRANCH_LEAVES);
+        registerBlockModel(ModBlocks.SNAGGLEBRANCH_LOG);
     }
 
     private static void registerItemModels()

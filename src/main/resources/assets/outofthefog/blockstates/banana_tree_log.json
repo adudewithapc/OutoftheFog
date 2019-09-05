@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=y":    { "model": "outofthefog:trees/banana_tree_log" },
+    "axis=z":     { "model": "outofthefog:trees/banana_tree_log", "x": 90 },
+    "axis=x":     { "model": "outofthefog:trees/banana_tree_log", "x": 90, "y": 90 },
+    "axis=none":   { "model": "outofthefog:trees/banana_tree_bark" },
+    "normal": { "model": "outofthefog:trees/banana_tree_bark" },
+    "inventory": { "model": "outofthefog:trees/banana_tree_log" }
+  }
+}

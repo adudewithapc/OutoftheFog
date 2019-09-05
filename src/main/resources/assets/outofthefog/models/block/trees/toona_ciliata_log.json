@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "outofthefog:blocks/toona_ciliata_log_top",
+    "side": "outofthefog:blocks/toona_ciliata_log"
+  }
+}

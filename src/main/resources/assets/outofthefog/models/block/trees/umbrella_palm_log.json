@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "outofthefog:blocks/umbrella_palm_log_top",
+    "side": "outofthefog:blocks/umbrella_palm_log"
+  }
+}

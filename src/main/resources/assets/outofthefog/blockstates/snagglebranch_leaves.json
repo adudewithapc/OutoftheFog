@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "outofthefog:trees/snagglebranch_leaves" },
+        "inventory": { "model": "outofthefog:trees/snagglebranch_leaves" },
+        "check_decay=false,decayable=true": { "model": "outofthefog:trees/snagglebranch_leaves" },
+        "check_decay=true,decayable=true": { "model": "outofthefog:trees/snagglebranch_leaves" },
+        "check_decay=false,decayable=false": { "model": "outofthefog:trees/snagglebranch_leaves" },
+        "check_decay=true,decayable=false": { "model": "outofthefog:trees/snagglebranch_leaves" }
+    }
+}

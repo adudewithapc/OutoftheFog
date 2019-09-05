@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "outofthefog:blocks/umbrella_palm_planks"
+  }
+}

@@ -13,10 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.GameData;
 import org.ootf.outofthefog.OutOfTheFog;
-import org.ootf.outofthefog.block.BlockCabbagePalm;
-import org.ootf.outofthefog.block.BlockDoublePlant;
-import org.ootf.outofthefog.block.BlockOOTF;
-import org.ootf.outofthefog.block.BlockReeds;
+import org.ootf.outofthefog.block.*;
 import org.ootf.outofthefog.util.Reference;
 
 @EventBusSubscriber(modid = Reference.MOD_ID)
@@ -32,6 +29,77 @@ public class ModBlocks
     @ObjectHolder("reeds")
     public static final BlockDoublePlant REEDS = null;
 
+
+        @ObjectHolder("jacksons_entbark_planks")
+        public static final Block JACKSONS_ENTBARK_PLANKS = Blocks.PLANKS;
+
+        @ObjectHolder("jacksons_entbark_leaves")
+        public static final Block JACKSONS_ENTBARK_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("jacksons_entbark_log")
+        public static final Block JACKSONS_ENTBARK_LOG = Blocks.LOG;
+
+        @ObjectHolder("fig_tree_planks")
+        public static final Block FIG_TREE_PLANKS = Blocks.PLANKS;
+
+        @ObjectHolder("fig_tree_leaves")
+        public static final Block FIG_TREE_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("fig_tree_log")
+        public static final Block FIG_TREE_LOG = Blocks.LOG;
+
+        @ObjectHolder("banana_tree_leaves")
+        public static final Block BANANA_TREE_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("banana_tree_log")
+        public static final Block BANANA_TREE_LOG = Blocks.LOG;
+
+        @ObjectHolder("toona_ciliata_planks")
+        public static final Block TOONA_CILIATA_PLANKS = Blocks.PLANKS;
+
+        @ObjectHolder("toona_ciliata_leaves")
+        public static final Block TOONA_CILIATA_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("toona_ciliata_log")
+        public static final Block TOONA_CILIATA_LOG = Blocks.LOG;
+
+        @ObjectHolder("coconut_palm_planks")
+        public static final Block COCONUT_PALM_PLANKS = Blocks.LOG;
+
+        @ObjectHolder("coconut_palm_leaves")
+        public static final Block COCONUT_PALM_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("coconut_palm_log")
+        public static final Block COCONUT_PALM_LOG = Blocks.LOG;
+
+        @ObjectHolder("snagglebranch_planks")
+        public static final Block SNAGGLEBRANCH_PLANKS = Blocks.PLANKS;
+
+        @ObjectHolder("snagglebranch_leaves")
+        public static final Block SNAGGLEBRANCH_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("snagglebranch_log")
+        public static final Block SNAGGLEBRANCH_LOG = Blocks.LOG;
+
+        @ObjectHolder("swamproot_planks")
+        public static final Block SWAMPROOT_PLANKS = Blocks.LEAVES;
+
+        @ObjectHolder("swamproot_leaves")
+        public static final Block SWAMPROOT_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("swamproot_log")
+        public static final Block SWAMPROOT_LOG = Blocks.LOG;
+
+        @ObjectHolder("umbrella_palm_planks")
+        public static final Block UMBRELLA_PALM_PLANKS = Blocks.LOG;
+
+        @ObjectHolder("umbrella_palm_leaves")
+        public static final Block UMBRELLA_PALM_LEAVES = Blocks.LEAVES;
+
+        @ObjectHolder("umbrella_palm_log")
+        public static final Block UMBRELLA_PALM_LOG = Blocks.LOG;
+
+
     @SubscribeEvent
     @SuppressWarnings("unused")
     public static void registerBlocks(RegistryEvent.Register<Block> event)
@@ -39,7 +107,32 @@ public class ModBlocks
         event.getRegistry().registerAll(
                 prepare(new BlockCabbagePalm(), "cabbage_palm"),
                 prepare(new BlockOOTF(Material.PLANTS).setSoundType(SoundType.PLANT), "thatch_block"),
-                prepare(new BlockReeds(), "reeds")
+                prepare(new BlockReeds(), "reeds"),
+
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"fig_tree_planks"),
+                prepare(new BlockFigLeaves(),"fig_tree_leaves"),
+                prepare(new BlockOOTFLog(),"fig_tree_log"),
+                prepare(new BlockBananaLeaves(),"banana_tree_leaves"),
+                prepare(new BlockOOTFLog(),"banana_tree_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"toona_ciliata_planks"),
+                prepare(new BlockCiliataLeaves(),"toona_ciliata_leaves"),
+                prepare(new BlockOOTFLog(),"toona_ciliata_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"coconut_palm_planks"),
+                prepare(new BlockCoconutLeaves(),"coconut_palm_leaves"),
+                prepare(new BlockOOTFLog(),"coconut_palm_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"snagglebranch_planks"),
+                prepare(new BlockSnagglebranchLeaves(),"snagglebranch_leaves"),
+                prepare(new BlockOOTFLog(),"snagglebranch_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"swamproot_planks"),
+                prepare(new BlockSwamprootLeaves(),"swamproot_leaves"),
+                prepare(new BlockOOTFLog(),"swamproot_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"umbrella_palm_planks"),
+                prepare(new BlockUmbrellaLeaves(),"umbrella_palm_leaves"),
+                prepare(new BlockOOTFLog(),"umbrella_palm_log"),
+                prepare(new BlockOOTF(Material.WOOD).setSoundType(SoundType.WOOD),"jacksons_entbark_planks"),
+                prepare(new BlockEntbarkLeaves(),"jacksons_entbark_leaves"),
+                prepare(new BlockOOTFLog(),"jacksons_entbark_log")
+
         );
     }
 
@@ -48,7 +141,31 @@ public class ModBlocks
     public static void registerItemBlocks(RegistryEvent.Register<Item> event)
     {
         event.getRegistry().registerAll(
-                createItemBlock(THATCH_BLOCK)
+                createItemBlock(THATCH_BLOCK),
+
+                createItemBlock(JACKSONS_ENTBARK_PLANKS),
+                createItemBlock(JACKSONS_ENTBARK_LEAVES),
+                createItemBlock(JACKSONS_ENTBARK_LOG),
+                createItemBlock(FIG_TREE_PLANKS),
+                createItemBlock(FIG_TREE_LEAVES),
+                createItemBlock(FIG_TREE_LOG),
+                createItemBlock(BANANA_TREE_LEAVES),
+                createItemBlock(BANANA_TREE_LOG),
+                createItemBlock(TOONA_CILIATA_PLANKS),
+                createItemBlock(TOONA_CILIATA_LEAVES),
+                createItemBlock(TOONA_CILIATA_LOG),
+                createItemBlock(COCONUT_PALM_PLANKS),
+                createItemBlock(COCONUT_PALM_LEAVES),
+                createItemBlock(COCONUT_PALM_LOG),
+                createItemBlock(SNAGGLEBRANCH_PLANKS),
+                createItemBlock(SNAGGLEBRANCH_LEAVES),
+                createItemBlock(SNAGGLEBRANCH_LOG),
+                createItemBlock(SWAMPROOT_PLANKS),
+                createItemBlock(SWAMPROOT_LEAVES),
+                createItemBlock(SWAMPROOT_LOG),
+                createItemBlock(UMBRELLA_PALM_PLANKS),
+                createItemBlock(UMBRELLA_PALM_LEAVES),
+                createItemBlock(UMBRELLA_PALM_LOG)
         );
     }
 

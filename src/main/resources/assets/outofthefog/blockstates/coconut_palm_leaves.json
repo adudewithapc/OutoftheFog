@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "outofthefog:trees/coconut_palm_leaves" },
+        "inventory": { "model": "outofthefog:trees/coconut_palm_leaves" },
+        "check_decay=false,decayable=true": { "model": "outofthefog:trees/coconut_palm_leaves" },
+        "check_decay=true,decayable=true": { "model": "outofthefog:trees/coconut_palm_leaves" },
+        "check_decay=false,decayable=false": { "model": "outofthefog:trees/coconut_palm_leaves" },
+        "check_decay=true,decayable=false": { "model": "outofthefog:trees/coconut_palm_leaves" }
+    }
+}

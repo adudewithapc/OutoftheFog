@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "outofthefog:blocks/fig_tree_log_top",
+    "side": "outofthefog:blocks/fig_tree_log"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=y":    { "model": "outofthefog:trees/swamproot_log" },
+    "axis=z":     { "model": "outofthefog:trees/swamproot_log", "x": 90 },
+    "axis=x":     { "model": "outofthefog:trees/swamproot_log", "x": 90, "y": 90 },
+    "axis=none":   { "model": "outofthefog:trees/swamproot_bark" },
+    "normal": { "model": "outofthefog:trees/swamproot_bark" },
+    "inventory": { "model": "outofthefog:trees/swamproot_log" }
+  }
+}

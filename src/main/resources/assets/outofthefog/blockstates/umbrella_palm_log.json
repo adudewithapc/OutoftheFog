@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=y":    { "model": "outofthefog:trees/umbrella_palm_log" },
+    "axis=z":     { "model": "outofthefog:trees/umbrella_palm_log", "x": 90 },
+    "axis=x":     { "model": "outofthefog:trees/umbrella_palm_log", "x": 90, "y": 90 },
+    "axis=none":   { "model": "outofthefog:trees/umbrella_palm_bark" },
+    "normal": { "model": "outofthefog:trees/umbrella_palm_bark" },
+    "inventory": { "model": "outofthefog:trees/umbrella_palm_log" }
+  }
+}

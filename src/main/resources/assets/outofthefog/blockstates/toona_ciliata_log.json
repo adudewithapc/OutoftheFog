@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=y":    { "model": "outofthefog:trees/toona_ciliata_log" },
+    "axis=z":     { "model": "outofthefog:trees/toona_ciliata_log", "x": 90 },
+    "axis=x":     { "model": "outofthefog:trees/toona_ciliata_log", "x": 90, "y": 90 },
+    "axis=none":   { "model": "outofthefog:trees/toona_ciliata_bark" },
+    "normal": { "model": "outofthefog:trees/toona_ciliata_bark" },
+    "inventory": { "model": "outofthefog:trees/toona_ciliata_log" }
+  }
+}
